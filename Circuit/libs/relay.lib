@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Relay
+#
+DEF Relay U 0 40 Y Y 1 F N
+F0 "U" 0 -400 60 H V C CNN
+F1 "Relay" 0 350 60 H V C CNN
+F2 "" -100 0 60 H I C CNN
+F3 "" -100 0 60 H I C CNN
+DRAW
+S -350 300 300 -300 0 1 0 N
+X Coil_1 1 -550 250 200 R 50 50 1 1 I
+X Coil_2 2 -550 -250 200 R 50 50 1 1 I
+X Common 3 500 0 200 L 50 50 1 1 I
+X Contact_Off 4 500 150 200 L 50 50 1 1 I
+X Contact_On 5 500 -150 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
