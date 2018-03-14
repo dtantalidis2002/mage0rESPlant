@@ -1116,7 +1116,7 @@ F 1 "CONN_01X10" V 9250 3500 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 9150 3500 50  0001 C CNN
 F 3 "" H 9150 3500 50  0000 C CNN
 	1    9150 3500
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Connection ~ 8700 3000
 $Comp
@@ -1691,4 +1691,32 @@ Wire Wire Line
 	10050 2450 10150 2450
 Text Label 2750 6900 2    60   ~ 0
 USB_VCC
+$Comp
+L +3.3V #PWR?
+U 1 1 58FF9292
+P 10700 3450
+F 0 "#PWR?" H 10700 3300 50  0001 C CNN
+F 1 "+3.3V" H 10700 3590 50  0000 C CNN
+F 2 "" H 10700 3450 60  0000 C CNN
+F 3 "" H 10700 3450 60  0000 C CNN
+	1    10700 3450
+	1    0    0    -1  
+$EndComp
+Text Label 10950 3800 2    60   ~ 0
+EN
+$Comp
+L R R?
+U 1 1 58FFA417
+P 10700 3600
+F 0 "R?" V 10780 3600 50  0000 C CNN
+F 1 "12K" V 10700 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10630 3600 24  0000 C CNN
+F 3 "" H 10700 3600 30  0000 C CNN
+	1    10700 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10700 3750 10700 3800
+Wire Wire Line
+	10700 3800 10950 3800
 $EndSCHEMATC
